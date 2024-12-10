@@ -1,0 +1,247 @@
+
+:root {
+    --light-shadow: inset -1px -1px 5px rgba(250, 248, 248, 0.6);
+    --dark-shadow: inset 1px 1px 5px rgba(161, 141, 141, 0.6);
+  
+  
+    --line-light:inset -2px -1px 4px rgba(250, 248, 248, 0.6);
+    --line-dark:inset 2px 1px 4px rgba(187, 169, 169, 0.9);
+  
+  
+    --background-recommendation: linear-gradient(#62398c, #53287d);
+    --border-radius-recommendation: 25px 0px 25px 00px;
+  
+  
+    --standard-max-size: 2rem;
+    --standard-main-size: 1rem;
+  
+  
+    --main-color-purple: #421f64;
+  }
+  
+  
+  .artists-round-grid-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  
+  
+  .round-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2.2rem;
+  }
+  .round {
+    background-color: #876fa0;
+    width: 20vw;
+    height: 10vh;
+    border-radius: 50px;
+    /*box-shadow:10px 10px 2px #c6beba;*/
+   
+  
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  
+    overflow: hidden;
+  
+  
+    box-shadow: 10px 10px 2px red;
+  }
+  
+  
+  .round img{
+  max-width: auto;
+  max-height: auto;
+  opacity: 20%;
+  transform: scale(0.2);
+   
+  }
+  
+  
+  .welcome-back-playlist {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    justify-content: space-between;
+    width: 100%;
+    gap: var(--standard-max-size);
+  }
+  
+  
+  /* Rectangle 32 */
+  
+  
+  .main-recoomendation {
+    background: var(--background-recommendation);
+    border-radius: var(--border-radius-recommendation);
+    color: white;
+    height: 25vh;
+    box-shadow: var(--dark-shadow);
+    box-shadow: var(--light-shadow);
+  }
+  
+  
+  .main-recoomendation h1 {
+    margin: 4rem 1rem;
+    font-size: 1rem;
+  }
+  
+  
+  .main-recoomendation img {
+    margin: 0;
+  }
+  
+  
+  .half-recommendation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.2rem;
+  }
+  
+  
+  .option-1, .option-1 img {
+    background: var(--background-recommendation);
+    border-radius: var(--border-radius-recommendation);
+    height: 8vh;
+    width: 50%;
+  
+  
+    box-shadow: var(--dark-shadow);
+    box-shadow: var(--light-shadow);
+  }
+  
+  
+  
+  
+  .option-1:last-child, .option-1 img:last-child {
+   
+    border-radius: 0px 25px 0px 25px;
+  }
+  .option-1:first-child{
+   
+    border-radius: var(--border-radius-recommendation);
+  
+  
+  }
+  
+  
+  .option-1 h1 {
+    position: absolute;
+    font-size: 1rem;
+    color: white;
+    margin: 0
+  }
+  
+  
+  .pc-round{
+    display: none;
+  }
+  
+  
+  .welcome-back-playlist > h1 {
+    color: #613889;
+    font-size: 1.2rem;
+  }
+  
+  
+  .information-playlist {
+    display: flex;
+    flex-direction: column;
+    width: 73%;
+  }
+  
+  
+  .information-playlist h1 {
+    color: #613889;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  
+  
+  .quick-tag-search {
+    display: none;
+  }
+  .automatic-new-playlist {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: var(--standard-max-size);
+  }
+  
+  
+  .automatic-new-playlist > .card-playlist:first-child {
+    margin-top: 4rem;
+  }
+  
+  
+  .card-playlist {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(
+      rgba(218, 195, 192, 0.5),
+      rgba(218, 195, 192, 0.2)
+    );
+    gap: 1.6rem;
+  }
+  
+  
+  .icon-playlist svg {
+    width: 100%;
+    height: 20vh;
+    margin-left: 1.4rem;
+  }
+  
+  
+  .icon-playlist {
+    flex-shrink: 2;
+    height: 20vh;
+    width: 20%;
+    margin-right: 1rem;
+  }
+  
+  
+  .description-playlist {
+    margin-top: -1.8rem;
+    margin-right: 3rem;
+    font-size: 0.8rem;
+    color: #5f546a;
+  }
+  .tags {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+  }
+  .tag {
+    height: 2vh;
+    width: 10.4vw;
+    border-radius: 200px;
+    background-color: #421f64;
+  }
+  
+  
+  .tags .tag:last-child {
+    border: 2px solid #421f64;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
