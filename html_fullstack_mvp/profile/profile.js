@@ -37,6 +37,9 @@ logInButton.addEventListener("click", (e) => {
             droppedUrl =`http://127.0.0.1:5000/api/user/${userId}/dropped_books`
             likedUrl =`http://127.0.0.1:5000/api/user/${userId}/liked_books`
             logUser.querySelector("h5").innerText = "log out app";
+
+
+            console.log("inside user plis")
             
           }
         });
@@ -89,9 +92,12 @@ listBtn.addEventListener("click", (e) => {
                     if(book.book_id === data.book_id)
                     {
                       
+                      document.querySelector(".overlay-list-title").innerText="Dropped list"
                       const markup = `<li>${data.book_name}</li>`;
                       
                       droppedList.insertAdjacentHTML('beforeend', markup);
+
+
                     }
 
               });
@@ -126,6 +132,7 @@ listBtn.addEventListener("click", (e) => {
                     .then(data=>{
                     if(book.book_id === data.book_id)
                     {
+                      document.querySelector(".overlay-list-title").innerText="Liked list"
                       
                       const markup = `<li>${data.book_name}</li>`;
                       console.log("likedList book list: ", data)
